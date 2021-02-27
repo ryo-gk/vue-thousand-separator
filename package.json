@@ -1,6 +1,6 @@
 {
   "name": "vue-thousand-separator",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "main": "dist/vue-thousand-separator.esm.js",
   "unpkg": "dist/vue-thousand-separator.umd.js",
   "types": "dist/types/index.d.ts",

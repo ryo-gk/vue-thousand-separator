@@ -23,7 +23,7 @@ Vue.use(VueThousandSeparator);
 ```
 <template>
   <div>
-    <app-text-field v-separator/>
+    <app-text-field v-separator />
   </dib>
 </template>
 ```
@@ -38,6 +38,25 @@ For example, the `<app-text-field />` is expected to the like below.
     <input type="text" :value="value" />
   </div>
 </template>
+```
+
+### 4. Get numeric value
+You need to use input event to get the value like below.
+
+```
+<template>
+  <div>
+    <app-text-field v-separator @input="v => this.val = v" />
+  </dib>
+</template>
+
+<script>
+export default {
+  data() {
+    val: 0
+  }
+}
+</script>
 ```
 
 ## License
