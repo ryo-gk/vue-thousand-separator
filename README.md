@@ -1,29 +1,44 @@
 # vue-thousand-separator
+`vue-thousand-separator` is a plugin for Vue component.<br>
+This plugin provides the directive which format a input value to the one with a thousand separator by using [autoNumeric](https://github.com/autoNumeric/autoNumeric) inside.
 
-## Project setup
-```
-yarn install
-```
+## How to use
+### 1. Install
+#### npm
+`npm install vue-thousand-separator`
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+#### yarn
+`yarn add vue-thousand-separator`
 
-### Compiles and minifies for production
-```
-yarn build
-```
+### 2. Import and use
 
-### Run your unit tests
 ```
-yarn test:unit
+import VueThousandSeparator from 'vue-thousand-separator';
+
+Vue.use(VueThousandSeparator);
 ```
 
-### Lints and fixes files
+### 3. Attach v-separator directive
+
 ```
-yarn lint
+<template>
+  <div>
+    <app-text-field v-separator/>
+  </dib>
+</template>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Note that the component to attach directive should include `<input type="text">`.<br>
+For example, the `<app-text-field />` is expected to the like below.
+
+```
+<template>
+  <div class="AppTextField">
+    <label>Text Field</label>
+    <input type="text" :value="value" />
+  </div>
+</template>
+```
+
+## License
+Code released under MIT license.
