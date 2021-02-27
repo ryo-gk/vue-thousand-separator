@@ -15,6 +15,11 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
+  "author": "ryo_gk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryo-gk/vue-thousand-separator/issues"
+  },
   "dependencies": {
     "autonumeric": "^4.6.0",
     "core-js": "^3.6.5",

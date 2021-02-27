@@ -41,4 +41,4 @@ For example, the `<app-text-field />` is expected to the like below.
 ```
 
 ## License
-Code released under MIT license.
+Code released under [MIT license](LICENSE).
