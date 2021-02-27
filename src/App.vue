@@ -1,18 +1,24 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <h2>Thousand Separator</h2>
+    <app-input-number v-separator v-model="inputNumber" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import AppInputNumber from "./components/AppNumberInput.vue";
 
 export default Vue.extend({
   name: "App",
   components: {
-    HelloWorld
+    AppInputNumber
+  },
+  data() {
+    return {
+      inputNumber: null
+    };
   }
 });
 </script>
