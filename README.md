@@ -47,7 +47,7 @@ You need to use input event to get the value like below.
 <template>
   <div>
     <app-text-field v-separator @input="v => this.val = v" />
-  </dib>
+  </div>
 </template>
 
 <script>
