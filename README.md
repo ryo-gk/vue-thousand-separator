@@ -24,7 +24,7 @@ Vue.use(VueThousandSeparator);
 <template>
   <div>
     <app-text-field v-separator />
-  </dib>
+  </div>
 </template>
 ```
 
