@@ -1,6 +1,6 @@
 {
   "name": "vue-thousand-separator",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "dist/vue-thousand-separator.esm.js",
   "unpkg": "dist/vue-thousand-separator.umd.js",
   "types": "dist/types/index.d.ts",
@@ -14,6 +14,10 @@
     "build:es": "rollup --config rollup.config.js --format es --file dist/vue-thousand-separator.esm.js",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryo-gk/vue-thousand-separator.git"
   },
   "author": "ryo_gk",
   "license": "MIT",
